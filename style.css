@@ -1,0 +1,200 @@
+.hero-and-features {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* A bal oldal kétszer szélesebb, mint a jobb */
+    gap: 20px; /* Helyköz a blokkok között */
+    /*background-color: blue;*/
+}
+
+.side-features {
+    display: flex;
+    flex-direction: column; /* Egymás alá rendezi a két kisebb blokkot */
+    gap: 20px;
+    /*background-color: blueviolet;*/
+    text-align: center;
+}
+
+.welcome-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /*background-color: aquamarine;*/
+}
+
+.welcome-box, .about-box {
+    flex: 1; /* Egyenlő arányban osztják el a rendelkezésre álló helyet */
+    background-color: burlywood;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Négy egyenlő oszlop */
+    gap: 20px;
+    /*background-color: chartreuse;*/
+}
+
+/* Alapvető reszetelés és konténer stílusok */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #ffffff; /* Fehér háttér az egész fejlécnek */
+}
+
+/* Felső sáv stílusa */
+.header-top-bar {
+    background-color: #3b97d3; /* Kék háttérszín */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* A logót és az ikonokat a két szélre igazítja */
+    align-items: center; /* Függőlegesen középre igazítja az elemeket */
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigációs sáv stílusa */
+.main-nav {
+    background-color: #ff9a3c; /* Narancssárga háttérszín */
+    padding: 0 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Helyköz a menüpontok között */
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3b97d3; /* A fejléc kék színével megegyező háttér */
+    color: white;
+    text-align: center; /* A szöveget középre igazítja */
+    padding: 20px 0; /* Egy kis térközt ad a tartalom fölé és alá */
+    margin-top: 40px; /* Helyet hagy a fő tartalom és a lábléc között */
+}
+
+.footer-content {
+    /* Biztosítja, hogy a tartalom a konténer szélességén belül maradjon */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+footer p {
+    margin: 0; /* Eltávolítja a paragrafus elemek alapértelmezett margóját */
+    font-size: 14px;
+}
+
+main .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* --- 1. Szekció CSS --- */
+.hero-and-features {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 - 1/3 arány */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-banner {
+    background-color: #f7cac9; /* Példa háttérszín */
+    padding: 40px;
+    /* Kép beillesztése a háttérbe CSS-sel történne */
+    text-align: justify;
+    
+
+    /* Felülről lefelé sötétedő, áttetsző réteg a kép felett */
+    background-image: linear-gradient(rgba(255, 254, 254, 0.5), rgba(255, 255, 255, 0.8)), url('./kepek/bg.jpg');
+  
+    /* További hasznos beállítások a teljes kitöltéshez */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.side-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #c9f7f5; /* Példa háttérszín */
+    padding: 20px;
+    flex-grow: 1; /* Kitölti a rendelkezésre álló magasságot */
+    
+}
+
+/* --- 2. Szekció CSS --- */
+.welcome-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.content-box {
+    background-color: #d3eafc; /* Példa háttérszín */
+    padding: 30px;
+    flex: 1; /* Egyenlő szélesség */
+}
+
+/* --- 3. Szekció CSS (Termék rács) --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 egyenlő oszlop */
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image-placeholder {
+    background-color: #e0e0e0; /* Kép helyőrző szürke doboz */
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #ff9a3c;
+}
+
+/* Általános gomb stílus */
+.btn-shop-now, .btn-read-more {
+    display: inline-block;
+    background-color: #ff9a3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/*Képek igazítása*/
+
+.classical-ballons{
+    max-height: 80%;
+}
