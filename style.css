@@ -125,6 +125,22 @@ main .container {
   
     /* További hasznos beállítások a teljes kitöltéshez */
     
+    /* 1. Teljes kitöltés és méretezés */
+    background-size: cover;        /* Kitölti a területet torzítás nélkül */
+    background-position: center;  /* Mindig a kép közepe maradjon fókuszban */
+    background-repeat: no-repeat; /* Ne ismétlődjön a kép */
+
+    /* 2. Dinamikus magasság */
+    min-height: 50vh;             /* A képernyő magasságának legalább a fele */
+    display: flex;                /* Tartalom függőleges középre igazításához */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* 3. Parallaxis hatás (opcionális) */
+    /* background-attachment: fixed; */ /* Gördítéskor a kép egy helyben marad */
+    
+    
 
     
     
@@ -204,4 +220,5 @@ main .container {
     max-height: 80%;
 
 }
+
 
