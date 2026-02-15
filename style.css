@@ -121,11 +121,12 @@ main .container {
     
 
     /* Felülről lefelé sötétedő, áttetsző réteg a kép felett */
-    background-image: linear-gradient(rgba(255, 254, 254, 0.5), rgba(255, 255, 255, 0.8)), url('./kepek/bg.jpg');
+    background-image: linear-gradient(rgba(255, 254, 254, 0.5), rgba(255, 255, 255, 0.8)), url('./bg.jpg');
   
     /* További hasznos beállítások a teljes kitöltéshez */
-    background-size: cover;
-    background-position: center;
+    
+
+    
     
 }
 
@@ -197,4 +198,5 @@ main .container {
 
 .classical-ballons{
     max-height: 80%;
+
 }
