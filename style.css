@@ -137,9 +137,13 @@ main .container {
 }
 
 .feature-box {
-    background-color: #c9f7f5; /* Példa háttérszín */
+   /* background-color: #c9f7f5; Példa háttérszín */
     padding: 20px;
     flex-grow: 1; /* Kitölti a rendelkezésre álló magasságot */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
     
 }
 
@@ -200,3 +204,4 @@ main .container {
     max-height: 80%;
 
 }
+
